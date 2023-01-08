@@ -6,7 +6,7 @@
 	<h1>Harry Allen</h1>
 	<h2 class="mt-2">Links</h2>
 	<div>
-		<a href="https://github.com/HarryAllen1">GitHub</a>
-		<a href="https://discord.com/users/696554549418262548">Discord</a>
+		<a href="/github">GitHub</a>
+		<a href="/discord">Discord</a>
 	</div>
 </div>
