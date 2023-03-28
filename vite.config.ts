@@ -1,4 +1,3 @@
-/// <reference types="vitest" />
 import { sveltekit } from '@sveltejs/kit/vite';
 import { presetTypography } from '@unocss/preset-typography';
 import { presetUno } from '@unocss/preset-uno';
@@ -18,11 +17,11 @@ export default defineConfig({
 				if (supportedExtensions.includes(extension)) {
 					return new URLSearchParams({
 						format: 'avif;webp;' + extension.slice(1),
-						picture: 'true'
+						picture: 'true',
 					});
 				}
 				return new URLSearchParams();
-			}
+			},
 		}),
 		UnoCSS({
 			extractors: [extractorSvelte],
@@ -31,18 +30,14 @@ export default defineConfig({
 				colors: {
 					red: 'var(--md-sys-color-error, #b3261e)',
 					grey: 'var(--md-sys-color-outline, #79747e)',
-					gray: 'var(--md-sys-color-outline, #79747e)'
-				}
-			}
+					gray: 'var(--md-sys-color-outline, #79747e)',
+				},
+			},
 		}),
-		sveltekit()
+		sveltekit(),
 	],
-	test: {
-		include: ['src/**/*.{test,spec}.{js,ts}'],
-		globals: true,
-		environment: 'jsdom'
-	},
+
 	build: {
-		sourcemap: true
-	}
+		sourcemap: true,
+	},
 });
