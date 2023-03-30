@@ -1,8 +1,6 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import { presetTypography } from '@unocss/preset-typography';
-import { presetUno } from '@unocss/preset-uno';
 import { extname } from 'node:path';
-import { extractorSvelte, presetAttributify } from 'unocss';
+import { extractorSvelte, presetAttributify, presetTypography, presetUno } from 'unocss';
 import UnoCSS from 'unocss/vite';
 import { defineConfig } from 'vite';
 import { imagetools } from 'vite-imagetools';
