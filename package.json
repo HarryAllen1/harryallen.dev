@@ -18,6 +18,7 @@
 		"@types/node": "^18.15.11",
 		"@typescript-eslint/eslint-plugin": "^5.57.0",
 		"@typescript-eslint/parser": "^5.57.0",
+		"@unocss/extractor-svelte": "^0.53.1",
 		"eslint": "^8.37.0",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-svelte3": "^4.0.0",
