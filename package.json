@@ -36,7 +36,7 @@
 	"type": "module",
 	"dependencies": {
 		"@unocss/reset": "^0.53.0",
-		"@vercel/analytics": "^0.1.11"
+		"@vercel/analytics": "^1.0.0"
 	},
 	"pnpm": {
 		"peerDependencyRules": {

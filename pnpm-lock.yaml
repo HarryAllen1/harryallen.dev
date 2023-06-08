@@ -9,8 +9,8 @@ dependencies:
     specifier: ^0.53.0
     version: 0.53.0
   '@vercel/analytics':
-    specifier: ^0.1.11
-    version: 0.1.11
+    specifier: ^1.0.0
+    version: 1.0.0
 
 devDependencies:
   '@sveltejs/adapter-vercel':
@@ -1068,8 +1068,8 @@ packages:
       - rollup
     dev: true
 
-  /@vercel/analytics@0.1.11:
-    resolution: {integrity: sha512-mj5CPR02y0BRs1tN3oZcBNAX9a8NxsIUl9vElDPcqxnMfP0RbRc9fI9Ud7+QDg/1Izvt5uMumsr+6YsmVHcyuw==}
+  /@vercel/analytics@1.0.0:
+    resolution: {integrity: sha512-RQmj7pv82JwGDHrnKeRc6TtSw2U7rWNubc2IH0ernTzWTj02yr9zvIYiYJeztsBzrJtWv7m8Nz6vxxb+cdEtJw==}
     peerDependencies:
       react: ^16.8||^17||^18
     peerDependenciesMeta:
