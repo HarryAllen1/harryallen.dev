@@ -1,42 +1,21 @@
+import { enhancedImages } from '@sveltejs/enhanced-img';
 import { sveltekit } from '@sveltejs/kit/vite';
-import extractorSvelte from '@unocss/extractor-svelte';
-import { extname } from 'node:path';
-import { presetAttributify, presetTypography, presetUno } from 'unocss';
-import UnoCSS from 'unocss/vite';
+import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'vite';
-import { imagetools } from 'vite-imagetools';
-
-const supportedExtensions = ['.png', '.jpg', '.jpeg'];
 
 export default defineConfig({
 	plugins: [
-		imagetools({
-			defaultDirectives: (url) => {
-				const extension = extname(url.pathname);
-				if (supportedExtensions.includes(extension)) {
-					return new URLSearchParams({
-						format: 'avif;webp;' + extension.slice(1),
-						picture: 'true',
-					});
-				}
-				return new URLSearchParams();
-			},
-		}),
-		UnoCSS({
-			extractors: [extractorSvelte],
-			presets: [presetUno(), presetTypography(), presetAttributify()],
-			theme: {
-				colors: {
-					red: 'var(--md-sys-color-error, #b3261e)',
-					grey: 'var(--md-sys-color-outline, #79747e)',
-					gray: 'var(--md-sys-color-outline, #79747e)',
-				},
-			},
-		}),
+		enhancedImages(),
+		tailwindcss(),
 		sveltekit(),
 	],
-
 	build: {
-		sourcemap: true,
+		target: 'es2023',
+	},
+	server: {
+		watch: {
+			// test files are never imported so shouldn't ever trigger a reload
+			ignored: ['**/*.test.ts', '**/*.test.js'],
+		},
 	},
 });

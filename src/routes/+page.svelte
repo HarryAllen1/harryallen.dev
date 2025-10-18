@@ -1,14 +1,23 @@
-<svelte:head>
-	<title>harryallen.dev</title>
-</svelte:head>
+<script lang="ts">
+	import { Button } from '$lib/components/ui/button/index.js';
+	import Github from '@lucide/svelte/icons/github';
+	import LinkedIn from '@lucide/svelte/icons/linkedin';
+</script>
 
-<div class="w-full flex flex-col items-start pl-[30%] justify-center h-full">
-	<h1 class="text-transparent bg-clip-text bg-gradient-radial from-white to-[#77C] w-fit">
-		Harry Allen
-	</h1>
-	<h2 class="mt-2">Links</h2>
+<div class="container mx-auto my-8 max-w-3xl">
+	<h1 class="text-3xl font-bold">Harry Allen</h1>
+
 	<div>
-		<a href="/github">GitHub</a>
-		<a href="/discord">Discord</a>
+		<Button href="https://github.com/HarryAllen1" size="icon" variant="ghost" target="_blank">
+			<Github />
+		</Button>
+		<Button
+			href="https://www.linkedin.com/in/harry-m-allen/"
+			size="icon"
+			variant="ghost"
+			target="_blank"
+		>
+			<LinkedIn />
+		</Button>
 	</div>
 </div>

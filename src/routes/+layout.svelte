@@ -1,18 +1,12 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
-	import '@unocss/reset/tailwind.css';
-	import { onMount } from 'svelte';
-	import 'uno.css';
-	import './theme.scss';
+	import type { Snippet } from 'svelte';
+	import '../app.css';
 
-	onMount(async () => {
-		if (browser) {
-			const { inject } = await import('@vercel/analytics');
-			inject();
-		}
-	});
+	interface Props {
+		children?: Snippet;
+	}
+
+	let { children }: Props = $props();
 </script>
 
-<div class="prose max-w-full h-full">
-	<slot />
-</div>
+{@render children?.()}
