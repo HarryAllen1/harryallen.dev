@@ -2,7 +2,7 @@
 @import 'tw-animate-css';
 
 :root {
-	--font-mono: Fira Code;
+	--font-mono: Fira Mono;
 	--default-font-family: var(--font-mono);
 
 	--radius: 0.65rem;
