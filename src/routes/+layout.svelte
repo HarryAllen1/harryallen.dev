@@ -9,4 +9,8 @@
 	let { children }: Props = $props();
 </script>
 
+<svelte:head>
+	<title>Harry Allen</title>
+</svelte:head>
+
 {@render children?.()}
