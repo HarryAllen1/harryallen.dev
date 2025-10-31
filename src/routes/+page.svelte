@@ -11,6 +11,7 @@
 	<div>
 		<Button href="https://github.com/HarryAllen1" size="icon" variant="ghost" target="_blank">
 			<GithubIcon />
+			<span class="sr-only"> Github </span>
 		</Button>
 		<Button
 			href="https://www.linkedin.com/in/harry-m-allen/"
@@ -19,10 +20,12 @@
 			target="_blank"
 		>
 			<LinkedInIcon />
+			<span class="sr-only"> LinkedIn </span>
 		</Button>
 
 		<Button href="/Harry Allen_Resume.pdf" size="icon" variant="ghost" target="_blank">
 			<FileTextIcon />
+			<span class="sr-only"> CV </span>
 		</Button>
 	</div>
 </div>
