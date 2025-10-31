@@ -22,26 +22,26 @@
 		]
 	},
 	"devDependencies": {
-		"@eslint/compat": "1.4.0",
+		"@eslint/compat": "1.4.1",
 		"@eslint/js": "9.38.0",
 		"@sveltejs/adapter-cloudflare": "7.2.4",
 		"@sveltejs/enhanced-img": "0.8.4",
-		"@sveltejs/kit": "2.48.2",
+		"@sveltejs/kit": "2.48.4",
 		"@sveltejs/vite-plugin-svelte": "6.2.1",
 		"@tailwindcss/vite": "4.1.16",
 		"@types/eslint": "9.6.1",
 		"@types/eslint-config-prettier": "6.11.3",
-		"@types/node": "24.9.1",
+		"@types/node": "24.9.2",
 		"clsx": "2.1.1",
 		"eslint": "9.38.0",
 		"eslint-config-prettier": "10.1.8",
-		"eslint-plugin-svelte": "3.12.5",
+		"eslint-plugin-svelte": "3.13.0",
 		"eslint-plugin-unicorn": "62.0.0",
 		"globals": "16.4.0",
 		"prettier": "3.6.2",
 		"prettier-plugin-svelte": "3.4.0",
 		"prettier-plugin-tailwindcss": "0.7.1",
-		"svelte": "5.42.3",
+		"svelte": "5.43.2",
 		"svelte-check": "4.3.3",
 		"tailwind-merge": "3.3.1",
 		"tailwind-variants": "3.1.1",
@@ -50,9 +50,9 @@
 		"typescript": "5.9.3",
 		"typescript-eslint": "8.46.2",
 		"vite": "npm:rolldown-vite@7.1.20",
-		"wrangler": "4.45.1"
+		"wrangler": "4.45.3"
 	},
 	"dependencies": {
-		"@lucide/svelte": "0.548.0"
+		"@lucide/svelte": "0.552.0"
 	}
 }
