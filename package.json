@@ -23,7 +23,7 @@
 	},
 	"devDependencies": {
 		"@eslint/compat": "1.4.1",
-		"@eslint/js": "9.38.0",
+		"@eslint/js": "10.0.1",
 		"@sveltejs/adapter-cloudflare": "7.2.4",
 		"@sveltejs/enhanced-img": "0.8.4",
 		"@sveltejs/kit": "2.48.4",
@@ -33,7 +33,7 @@
 		"@types/eslint-config-prettier": "6.11.3",
 		"@types/node": "24.9.2",
 		"clsx": "2.1.1",
-		"eslint": "9.38.0",
+		"eslint": "10.10.0",
 		"eslint-config-prettier": "10.1.8",
 		"eslint-plugin-svelte": "3.13.0",
 		"eslint-plugin-unicorn": "62.0.0",
