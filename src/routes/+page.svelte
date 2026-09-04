@@ -28,4 +28,14 @@
 			<span class="sr-only"> CV </span>
 		</Button>
 	</div>
+
+	<div class="mt-2">
+		<p class="leading-7 not-first:mt-6">
+			Hello! I'm a second year computer science undergraduate at King's College London. My
+			experience primarily lies in software development (web development, computer vision), but I'm
+			always curious about branching out into different fields, such as cybersecurity, machine
+			learning, and IoT.
+		</p>
+		<p class="leading-7 not-first:mt-6">I also rock climb a lot.</p>
+	</div>
 </div>
