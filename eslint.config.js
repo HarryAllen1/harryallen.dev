@@ -1,8 +1,8 @@
-import { includeIgnoreFile } from '@eslint/compat';
 import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
 import svelte from 'eslint-plugin-svelte';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
+import { defineConfig, includeIgnoreFile } from 'eslint/config';
 import globals from 'globals';
 import { fileURLToPath } from 'node:url';
 import tseslint from 'typescript-eslint';
@@ -10,7 +10,7 @@ import svelteConfig from './svelte.config.js';
 
 const gitignorePath = fileURLToPath(new URL('.gitignore', import.meta.url));
 
-export default tseslint.config(
+export default defineConfig(
 	includeIgnoreFile(gitignorePath),
 	js.configs.recommended,
 	...tseslint.configs.strictTypeChecked,
@@ -24,22 +24,22 @@ export default tseslint.config(
 			parserOptions: {
 				extraFileExtensions: ['.svelte'],
 				projectService: true,
-				tsconfigRootDir: import.meta.dirname,
+				tsconfigRootDir: import.meta.dirname
 			},
 			globals: {
 				...globals.browser,
 				...globals.node,
 				google: 'readonly',
-				gtag: 'readonly',
-			},
+				gtag: 'readonly'
+			}
 		},
 		rules: {
 			// Ensures that correct values are returned, which is often a problem when generating directions.
 			'@typescript-eslint/explicit-function-return-type': [
 				'error',
 				{
-					allowExpressions: true,
-				},
+					allowExpressions: true
+				}
 			],
 			// Makes Svelte snippets unusable
 			'@typescript-eslint/no-confusing-void-expression': 'off',
@@ -57,8 +57,8 @@ export default tseslint.config(
 					allowNullish: false,
 					allowNumber: true,
 					allowRegExp: false,
-					allowNever: false,
-				},
+					allowNever: false
+				}
 			],
 			'@typescript-eslint/unbound-method': 'off',
 			'unicorn/no-array-reduce': 'off',
@@ -83,19 +83,19 @@ export default tseslint.config(
 						Ref: true,
 						ref: true,
 						src: true,
-						utils: true,
-					},
-				},
+						utils: true
+					}
+				}
 			],
 			curly: ['error', 'multi-line'],
 			eqeqeq: 'error',
 			'func-style': ['error', 'expression', { allowArrowFunctions: true }],
 			'no-console': ['warn', { allow: ['warn', 'error'] }],
-			yoda: 'error',
+			yoda: 'error'
 		},
 		linterOptions: {
-			reportUnusedDisableDirectives: 'error',
-		},
+			reportUnusedDisableDirectives: 'error'
+		}
 	},
 	{
 		files: ['**/*.svelte', '**/*.svelte.ts', '**/*.svelte.js'],
@@ -105,19 +105,15 @@ export default tseslint.config(
 				projectService: true,
 				extraFileExtensions: ['.svelte'],
 				parser: tseslint.parser,
-				svelteConfig,
-			},
+				svelteConfig
+			}
 		},
 		rules: {
 			'unicorn/prefer-top-level-await': 'off',
-			'@typescript-eslint/no-floating-promises': 'off',
-		},
+			'@typescript-eslint/no-floating-promises': 'off'
+		}
 	},
 	{
-		ignores: [
-			'src/lib/components/ui/',
-			'src/lib/utils.ts',
-			'static',
-		],
-	},
+		ignores: ['src/lib/components/ui/', 'src/lib/utils.ts', 'static']
+	}
 );

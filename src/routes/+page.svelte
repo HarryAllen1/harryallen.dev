@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button/index.js';
 	import FileTextIcon from '@lucide/svelte/icons/file-text';
-	import GithubIcon from '@lucide/svelte/icons/github';
-	import LinkedInIcon from '@lucide/svelte/icons/linkedin';
+	import GithubIcon from './GithubIcon.svelte';
+	import LinkedIn from './LinkedIn.svelte';
 </script>
 
 <div class="container mx-auto my-8 max-w-3xl">
@@ -19,7 +19,7 @@
 			variant="ghost"
 			target="_blank"
 		>
-			<LinkedInIcon />
+			<LinkedIn />
 			<span class="sr-only"> LinkedIn </span>
 		</Button>
 
