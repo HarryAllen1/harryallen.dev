@@ -17,7 +17,7 @@
 	"devDependencies": {
 		"@eslint/compat": "2.1.1",
 		"@eslint/js": "10.0.1",
-		"@sveltejs/adapter-cloudflare": "7.2.9",
+		"@sveltejs/adapter-cloudflare": "8.0.0",
 		"@sveltejs/enhanced-img": "0.11.0",
 		"@sveltejs/kit": "2.70.3",
 		"@sveltejs/vite-plugin-svelte": "7.3.0",
